@@ -1,0 +1,26 @@
+<h4>
+<p>Saisie adresse</p>
+</h4>
+
+<form [formGroup]="adresseForm">
+  <div class="form-group">
+  <label>Nom : <input type="text" class="form-control" formControlName="nom" /></label>
+</div>
+<div class="form-group">
+  <label>Numéro : <input type="number" class="form-control" formControlName="numero" /></label>
+</div>
+  <div class="form-group">
+  <label>Rue : <input type="text" class="form-control" formControlName="rue" /></label>
+</div>
+  <div class="form-group">
+  <label>Ville : <input type="text" class="form-control" formControlName="ville" /></label>
+</div>
+  <div class="form-group">
+  <label>Code Postal : <input type="number" class="form-control" formControlName="codePostal" /></label>
+</div>
+<br>
+  <button (click)="addAdresse()" class="btn btn-primary">Ajouter</button>
+
+</form>
+
+<br />

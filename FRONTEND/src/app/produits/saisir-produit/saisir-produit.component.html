@@ -1,0 +1,11 @@
+<p>Saisie produit</p>
+
+<form [formGroup]="produitForm">
+  <label>Nom : <input type="text" formControlName="nom" /></label>
+  <br />
+
+  <button (click)="addProduit()">Ajouter</button>
+</form>
+
+<br />
+<app-liste-produits></app-liste-produits>

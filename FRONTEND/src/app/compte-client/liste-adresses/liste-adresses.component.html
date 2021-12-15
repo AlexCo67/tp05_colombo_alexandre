@@ -1,0 +1,30 @@
+<h4>
+<p>Liste des adresses enregistrées</p>
+</h4>
+<div *ngFor="let c of liste$ | async">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Infos</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul class="list-group">
+   <li class="list-group-item"> nom : {{ c.nom }} </li>
+   <li class="list-group-item"> numéro : {{ c.numero }} </li>
+   <li class="list-group-item"> rue : {{ c.rue }} </li>
+   <li class="list-group-item"> ville : {{ c.ville }} </li>
+   <li class="list-group-item"> code postal : {{ c.codePostal }} </li>
+  </ul>
+  </td>
+  <td>
+    <button (click)="supprimerAdresse(c)">Supprimer l'adresse</button>
+  </td>
+    <br>
+  </tr>
+</tbody>
+</table>
+  </div>
